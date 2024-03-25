@@ -6,5 +6,7 @@ Tecnologias:
 - HTML, CSS e Javascript
 
 Futuras melhorias:
+<p></p>
 -> Tornar o site dinâmico, com animações, interações com o visualizador
+<p></p>
 -> Utilizar bibliotecas e frameworks para otimizar o projeto
