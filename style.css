@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --roxo-principal: rgb(82, 11, 122);
+    --branco: rgb(253, 253, 253);
+    --preto: rgb(27, 27, 27);
+    --azul-principal: rgb(24, 24, 102);
+    --azul-secundario: rgb(25, 25, 124);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Noto Sans Lao Looped";
+    overflow-x: hidden;
+    font-size: 1.5rem;
+}
+
+
+/* MULTISELETOR */
+
+
+/* HEADER */
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-links{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.c-links a{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+/* SOBRE MIM */
+.f-class-aboutme{
+    background-color: var(--roxo-principal);
+    width: 100vw;
+    height: 200px;
+}
+
+/* HARD SKILLS */
+
+.s-class-skills{
+    background-color: var(--azul-principal);
+    width: 100vw;
+    height: 300px;
+}
+
+/* SOFT SKILLS */
+
+.t-class-softskills{
+    width: 100vw;
+    height: 300px;
+    background-color: beige;
+}
+
+.softskills-cont{
+    display: flex;
+    gap: 4rem;
+}
+
+.c-softskill{
+    background-color: var(--roxo-principal);
+    width: 150px;
+    height: 150px;
+    border-radius: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CERTIFICAÇÕES */
+
+.fth-class-certifications{
+    background-color: var(--roxo-principal);
+    width: 100vw;
+    height: 200px;
+}
+
+/*  FOOTER */
+footer{
+    width: 100vw;
+    height: 18rem;
+    background-color: var(--azul-principal);
+
+}
