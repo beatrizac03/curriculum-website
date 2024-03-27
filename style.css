@@ -57,6 +57,12 @@ nav ul{
     text-decoration: none;
 }
 
+.nav-menubtn, .nav-menucont {
+    display: none;
+}
+
+
+
 
 
 /* SOBRE MIM */
@@ -148,6 +154,45 @@ footer{
     }
 
     /* header */
+    header {
+        width: 100vw;
+        line-height: 1.3;
+        padding: 1rem;
+    }
+
+    .c-links {
+        display: none;
+    }
+
+    .nav-menubtn {
+        width: 50px;
+        height: 50px;
+        border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menucont{
+        display: flex;
+        width: 40%;
+        height: 100vh;
+        background-color: brown;
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: center;
+    }
+
+    .nav-menucont ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+
+    .nav-menucont ul li a {
+        text-decoration: none;
+    }
 
 
     /* about me*/
