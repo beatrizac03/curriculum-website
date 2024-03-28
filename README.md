@@ -1,5 +1,7 @@
 ## Currículo - Website
 
+Link de acesso: https://beatrizac03.github.io/curriculum-website/
+
 O website contém informações sobre mim, links de projetos que realizei, contato e minhas habilidades técnicas. Dessa forma, torna-se uma forma visual e atrativa de mostrar meus objetivos profissionais.
 
 Tecnologias:
