@@ -16,13 +16,13 @@ html{
     --white: #fff;
 
     /* sizes */
-    --base-size: 1.2rem;
+    --base-size: 1rem;
     --scale: 1.25;
-    --xl: calc(var(--large) * var(--scale));
-    --large: calc(var(--medium) * var(--scale));
-    --medium: calc(var(--small) * var(--scale));
-    --small: calc(var(--tiny) * var(--scale));
     --tiny: calc(var(--base-size) / var(--scale));
+    --small: calc(var(--tiny) * var(--scale));
+    --medium: calc(var(--small) * var(--scale));
+    --large: calc(var(--medium) * var(--scale));
+    --xl: calc(var(--large) * var(--scale));
 
 }
 
@@ -95,7 +95,7 @@ nav ul{
 .cont-aboutme{
     width: 95%;
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     justify-content: space-around;
     
 }
@@ -104,6 +104,9 @@ nav ul{
     width: 50%;
     text-align: justify;
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .img-wrapper-aboutme{
@@ -112,6 +115,43 @@ nav ul{
     border-radius: 10rem;
     background-image: url(images/fotoportfolio.jpeg);
     background-size: cover;
+}
+
+.cont-btn-scmdlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-downloadcv {
+    padding: 1rem 2rem;
+    border: var(--light-black);
+    border-radius: 15px;
+    font-family: "Poppins";
+    background-color: var(--light-purple);
+}
+
+.btn-downloadcv:hover {
+    cursor: pointer;
+}
+
+.btn-downloadcv:hover span{
+    transform: scale(0.9);
+}
+
+.c-socialmedialinks {
+    display: flex;
+    gap: 1rem;
+    width: 30%;
+}
+
+.c-eachsocmedia{
+    width: 100%;
+}
+
+.c-eachsocmedia a {
+    width: 100%;
+    height: 100%;
 }
 
 /* EDUCATION SECTION */
@@ -126,7 +166,7 @@ nav ul{
 
 .cont-education {
     width: calc(100% - 10%);
-    border: 1 px solid blue;
+    /* border: 1 px solid blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,8 +183,6 @@ nav ul{
     width: 50%;
     gap: 1rem;
     align-items: center;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px var(--strong-black);
 }
 
 .contdef-cardeduc {
@@ -205,21 +243,30 @@ section.s-class-skills{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     justify-content: center;
 }
 
 .c-skill {
-    width: 15%;
-    height: 15rem;
+    width: 13%;
+    height: 175px;
     background-color: var(--light-black);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.c-skill p {
+    color: var(--white);
 }
 
 .image-skill {
     width: 80%;
-    height: 90%;
-    background-color: brown;
+    height: 55%;
+    /* background-color: brown; */
 }
 
 .image-skill img {
@@ -265,7 +312,15 @@ section.class-projects {
 
 .proj-img-wrapper {
     width: 45%;
+    height: 200px;
     background-color: grey;
+    border-radius: 10px;
+}
+
+.proj-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -291,11 +346,32 @@ section.class-projects {
 /*  FOOTER */
 footer{
     width: 100vw;
-    height: 18rem;
-    background-color: var(--azul-principal);
-
+    padding: 1rem 0;
+    height: auto;
+    background-color: var(--light-purple);
 }
 
+.cont-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctext-foot{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* media query*/
 @media screen and (max-width: 600px) {
     body{
         width: 100vw;
