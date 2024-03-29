@@ -49,7 +49,17 @@ section h2 {
 header{
     width: 100vw;
     background-color: var(--strong-black);
-    padding-top: 2rem;
+    padding: 2rem 0;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    transition: all 0.2s;
+    
+}
+
+.blurScroll {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
 }
 
 nav ul{
