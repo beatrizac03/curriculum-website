@@ -12,3 +12,16 @@ function toggleBlur() {
 }
 
 window.addEventListener('scroll', toggleBlur)
+
+/* dash below li link*/
+
+let eachLiLink = document.querySelectorAll('.c-links a')
+
+function toggleDashBelow(event){
+    let liLink = event.currentTarget.querySelector('li');
+    liLink.classList.toggle('afterDashLink')
+}
+
+eachLiLink.forEach((link) => {
+    link.addEventListener('mouseover', toggleDashBelow)
+})

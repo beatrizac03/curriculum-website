@@ -78,6 +78,18 @@ nav ul{
     text-decoration: none;
 }
 
+.c-links a li {
+    color: var(--white) !important;
+    position: relative;
+}
+
+.afterDashLink {
+    transition: all 0.2s;
+    position: absolute;
+    width: 80%;
+    border-bottom: 1px solid blue;
+}
+
 .nav-menubtn, .nav-menucont {
     display: none;
 }
