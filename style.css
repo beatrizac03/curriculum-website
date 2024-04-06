@@ -103,10 +103,18 @@ nav ul{
     
 }
 
-.afterDashLink {
-    position: absolute;
+.afterLiDash {
+    content: "";
+    position: relative;
+    border-bottom: 2px solid var(--light-purple);
     width: 80%;
-    border-bottom: 1px solid blue;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes leftToRight {
+    from {left: 0px;}
+    to {left: 20px;}
 }
 
 .nav-menubtn, .nav-menucont {
@@ -316,6 +324,7 @@ section.s-class-skills{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
 }
 
 .contain-rowskills{
